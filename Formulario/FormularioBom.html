@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>FormularioBom</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+            margin: 50px;
+        }
+        fieldset {
+            background-color: #EEE;
+            margin-bottom: 20px;
+            border:2px solid #0000ff;
+            width: 280px;
+        }
+        legend {
+            background-color:#0000ff;
+            color: #fff;
+            padding: 5px;
+        }
+        input {
+            width: 270px;
+        }
+        #d1 {
+            width:100px;
+        }
+        #i1 {
+            width: 100px;
+        }
+        h2 {
+            background-color: azure;
+            width: 300px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>FORMULARIO5</h2>
+<form method="POST" action="cadastro.html">
+    <input type="hidden" name="country" value="BR/">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+    <label>
+        Primeiro Nome:<br/>
+        <input type="text" name="name" required/><!--required validação nativa, minlenght minimo e, maxlenght maximo de caracteres-->
+    </label><br/>
+    <label>
+        Sobrenome:<br/>
+        <input type="text" name="lastname"/>
+    </label><br/>
+   
+  </fieldset>
+<fieldset>
+    <legend>Dados Profissionais</legend>
+    <label>
+        Nome da empresa:<br/>
+        <input type="text" name="company"/>
+    </label><br/>
+    <label>
+        Cargo na empresa:<br/>
+        <input type="text" name="companytitle"/>
+    </label><br/>
+ </fieldset>
+    <input id="i1"type="submit" value="Cadastrar"/>
+</form>
+    
+</body>
+</html>

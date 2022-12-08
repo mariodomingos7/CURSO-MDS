@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" />
+<title>Tags fieldset e legend</title> 
+<style>
+* {
+    box-sizing:border-box;
+}
+body {
+    margin:0px;
+}
+fieldset {
+    background-color: #eee;
+    margin-bottom: 20px;
+    border: 2px solid #ff0000;
+}
+legend {
+    background-color: #0000ff;
+    color: #fff;
+    padding: 5px;
+}
+
+</style>
+ </head>
+ <body>
+ <h1>Tags fieldset e legend</h1>
+
+ <form>  
+   <fieldset>
+       <legend>Dados Pessoais
+       </legend>
+     <label><br/>
+         None:<br/>
+         <input type="text" name="name" required/>
+     </label>
+     <label><br/>
+        Sobrenome:<br/>
+        <input type="text" name="lastname" required/>
+    </label>
+ </fieldset>   
+
+<fieldset>
+    <legend>Dados Profissionais</legend>
+    <label><br/>
+        None da empresa:<br/>
+        <input type="text" name="companyname"/>
+    </label>
+    <label><br/>
+       Cargo na empresa:<br/>
+       <input type="text" name="companyjobtitle"/>
+    </label><br/>
+    </fieldset>
+       <input type="submit" value="Cadastrar"/>
+   
+ </form>
+</body>
+ </html>

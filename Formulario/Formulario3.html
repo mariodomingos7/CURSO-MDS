@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario3</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+            margin: 50px;
+        }
+        fieldset {
+            background-color: #EEE;
+            margin-bottom: 20px;
+            border:2px solid #0000ff;
+            width: 280px;
+        }
+        legend {
+            background-color:#0000ff;
+            color: #fff;
+            padding: 5px;
+        }
+        input {
+            width: 270px;
+        }
+        h2 {
+            width: 300px;
+            background-color: beige;
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>FORMULARIO3</h2>
+<form method="POST">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+    <label>
+        Primeiro Nome:<br/>
+        <input type="text" name="name"/>
+    </label><br/>
+    <label>
+        Sobrenome:<br/>
+        <input type="text" name="lastname"/>
+    </label><br/>
+  </fieldset>
+<fieldset>
+    <legend>Dados Profissionais</legend>
+    <label>
+        Nome da empresa:<br/>
+        <input type="text" name="company"/>
+    </label><br/>
+    <label>
+        Cargo na empresa:<br/>
+        <input type="text" name="companytitle"/>
+    </label><br/>
+ </fieldset>
+    <input type="submit" value="Cadastrar"/>
+</form><br/>
+
+</body>
+</html>

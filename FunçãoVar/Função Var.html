@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta id="vieowport"name="viewport" content="width=device-width, user-scalable=no">
+<head>
+    <meta charset="UTF-8">
+    <title>FunçãoVar</title>
+    <style>
+        :root {
+            --bg-color:#ffcc00;
+            --bg-second:#ccc;
+            --font-color:#000;
+        }
+        body {
+            background-color:var(--bg-color);
+        }
+        h1 {
+            color:var(--font-color);
+           /*color:var(--font-color,#ff0000);invés de usar a cor font-color, usa o azul*/
+        }
+        .container {
+            background-color:var(--bg-second);
+            color: var(--font-color);
+        }
+    </style>
+</head>
+<body>
+    <h2>Título do Site</h2>
+    <div class="container">
+        Conteúdo do site
+    </div>
+    
+</body>
+</html>

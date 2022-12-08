@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta id="vieowport"name="viewport" content="width=device-width, user-scalable=no">
+    <title>Flexbox09</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style type="text/css">
+        body {
+            margin:10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+         display: flex;
+         height:500px;
+         flex-direction: row;
+         justify-content: center;
+         align-items:flex-start;
+          background-color: #DDDDDD;
+        }
+        .container div {
+            width: 100px;
+            height: 100px;
+            background-color: #9acd32;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+      .div8,   
+     .div10 {
+            align-self: flex-end;/*a div8 e 10 vem para baixo as outras fica */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>um</div>
+        <div>dois</div>
+        <div>trez</div>
+        <div>quatro</div>
+        <div>cinco</div>
+        <div>seis</div>
+        <div>sete</div>
+        <div class="div8">oito</div>
+        <div>nove</div>
+        <div class="div10">dez</div>
+        <div>onze</div>
+        <div>doze</div>
+        <div>reze</div>
+        <div>quatorze</div>
+        <div>quinze</div>
+    </div>
+   
+</body>
+</html>

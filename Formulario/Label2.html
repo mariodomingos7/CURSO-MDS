@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Label2</title>
+    <style>
+    body {
+        background-color: cornsilk;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 50px;
+    }
+    label {
+        display: block;/*para ficar um item abaixo do outro*/
+        margin-bottom:20px;
+    }
+    #inp1 {
+        padding: 10px;
+        width: 400px;
+        font-size: 15px;
+        border: 1px solid #CCC;
+        /*"OUTLIN:0 remove a borda que vem por padrão" e ao passar o mouse fica azul*/
+        outline: 0;
+        margin-top: 5px;
+    }
+    textarea {
+        padding: 10px;
+        width: 400px;
+        font-size: 15px;
+        border: 1px solid #CCC;
+        outline: 0;/*remove a borda padrão do campo*/
+        margin-top: 5px;
+    }
+    select {
+        padding: 10px;
+        width: 400px;
+        font-size: 15px;
+        border: 1px solid #CCC;
+        outline: 0;
+        margin-top: 5px;
+    }
+
+    textarea {
+        height: 150px;
+        resize: none;/*PARA NINGUEM PUXAR E ARRASTAR O CAMPO*/
+    }
+    .termoslink {
+        color: #000;
+        text-decoration: none;/*par tirar o sublinha do link*/
+    }
+    .termoslink {
+        text-decoration:underline;/*ao passar o mouse o sublinhado volta*/
+    }
+    button {
+        padding:10px;
+        font-size: 15px;
+        border: 1px solid #CCC;
+        background-color: #EEE;
+    }
+    button:hover {
+        background-color: #DDD;
+    }
+    </style>
+</head>
+<body>
+    <h2>Cadastro</h2>
+    <h4>LABEL2</h4>
+<form action="paginas/login.html" method="POST">
+    <label>
+        Nome Completo<br/>
+        <input type="text" name="nome"id="inp1"/>
+    </label><br/><br/>
+    <label>
+        Descrição<br/>
+        <textarea name="descricao"></textarea>
+    </label>
+    <label>
+    Categoria:<br/>
+    <select name="categoria">
+        <option value="1">Categoria 1</option>
+        <option value="2">Categoria 2</option>
+        <option value="3">Categoria3</option>
+        <option value="4">Categoria4</option>
+        <option value="5">Categoria5</option>
+    </select>
+    </label>
+    <label>
+        <input type="checkbox"/>
+        Eu declaro que li e aceito os <a href="paginas/termos.html" target="_blank" class="termoslink">termos de uso.</a>
+    </label>
+    <button>Faser Cadastro</button>
+</form> 
+    
+</body>
+</html>

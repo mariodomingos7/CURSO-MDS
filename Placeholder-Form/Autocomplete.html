@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta id="vieowport"name="viewport" content="width=device-width, user-scalable=no">
+    <title>autocomplete</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #EEE;
+        }
+        
+        form {
+            width: 180px;
+            height: 150px;
+            background-color: #DDD;
+            margin: auto;
+            padding: 20px;
+            margin-top:20px;
+            border-radius: 10px;
+        }
+        input {
+            padding:5px;
+            font-size: 13px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<form method="POST">
+    Usuário:<br/>
+    <input type="email" name="email" autocomplete="off"/><!--OFF OU ON--><br/><br/>
+    Senha:<br/>
+    <input type="password" name="senha" maxlength="6"/><br/><br/>
+    <input type="submit" value="Enviar"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+<!--<script type="text/javascript">
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// adicione um zero na frente de números<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+function checkTime(i)
+{
+if (i<10)
+{
+i="0" + i;
+}
+return i;
+}
+</script>-->
+</head>
+<body onload="startTime()">
+<div id="txt"></div><br/><br/>  
+<!-- 16 de Setembro de 2014 às 18 horas, 20 minutos, e 30 segundos -->
+<time datetime="2014-09-16T18:20:30">Terça-feira às 18:20</time>
+
+</body>
+</html>

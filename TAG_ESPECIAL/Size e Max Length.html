@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=no" >
+    <title>required input</title> 
+<style  type="text/css" >  
+   boby {
+       margin: 0;
+   }
+   /*
+   form {
+       width: 160px;
+       height: 150px;
+       background-color: #DDD;
+       margin: auto;
+       padding: 20px;
+        margin-top: 20px;
+   }
+   input {
+       padding: 5px;
+       font-size: 13px;
+   }*/
+   
+</style>
+ </head>
+ <body>
+     <form method="POST">
+         Usuário:<br/>
+        <!--size="10", o capo so aceita 10 caracteres-->
+        <input type="text" name="usuario" size="10"/><br/><br/>
+        <!--maxlength, aceita o maximo de caracteres, ex:4
+        <input type="text" name="usuario" maxlength="4"/><br/><br/>-->
+
+        Senha:<br/>
+        <input type="password" name="senha"/><br/><br/>
+
+        <input type="submit" value="Enviar"/>
+     </form>
+
+ </boby>
+ </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidade de medida</title>
+    <style type="text/css">
+    body {
+        margin: 0;
+        background-color: #999;
+        margin: 50px;
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h4 {
+        font-size: 1em;
+    }
+    .box {
+        font-size: 1em;
+        background-color:burlywood;
+        width: 12em;
+        height: 12em;
+    }
+    .box-interno {
+    background-color:bisque;
+    width: 10em;/* 1em é baseado no item pai que é o 'body' */
+    height: 10em;
+    margin: auto;
+
+    }
+    .teste {
+        /*essa formatação é a melhor*/
+     /*essa tag está formatada com rem; equivale o valor root que é do body'*/
+        font-size: 1rem;
+    }
+    </style>
+</head>
+<body>
+    <h2>Unidade de medida absolutas</h2>
+    <div class="container">
+        <!--não sofre interferência de outro elemento do site-->
+        <h4>pt = ponto</h4>
+        <h4>px = pixel</h4>
+        <h4>in = polegada</h4>
+        <h4>cm = centimetro</h4>
+        <h4>rem</h4>
+    </div>
+    <h2>Unidade de medida relativa a fonte</h2>
+    <div class="box">
+        <div class="box-interno">
+        <h4>Frase1</h4>
+    </div>
+    </div>
+        <div class="teste">
+            <h4>Frase para teste</h4>
+        </div>
+     <div>
+        <h2>Unidade de medida relativa a porcentagem</h2>
+     </div>   
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta id="vieowport"name="viewport" content="width=device-width, user-scalable=no">
+    <title>Css @media: Como funciona1</title>
+    <style>
+    body {
+        margin: 0;
+        background-color: #00ff00;
+    }
+    @media (min-width:1000px){  /*quando a tela tiver no mínimo 1000px*/
+        body {
+            background-color: #0000ff;
+        }
+        h1 {
+            font-size: 70px;
+            color: yellow;
+        }
+    }
+    @media (min-width:700px) and (max-width:1000px) {
+        body {
+            background-color: purple;
+        }
+        h1 {
+            font-size: 50px;
+            color: red;
+        }
+        @media(min-width:300px) and (max-width 700px) {
+            body {
+                background-color: royalblue;
+            }
+        }
+         h1 {
+        font-size: 15px;
+        color: #fff;
+       }
+        }
+   
+    </style>
+</head>
+<body>
+    <h1>Seja bem vindo(a) ao meu site</h1>
+</body>
+</html>

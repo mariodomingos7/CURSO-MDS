@@ -1,0 +1,425 @@
+ROW > O PADRÃO É LINEAR.
+==============================================
+ROW-REVERSE > ALINHA DA DIREITA PARA ESQUERDA.
+==============================================
+COLUMN > ALINHA EM COLUNA.
+==============================================
+COLUMN-REVERSE > ALINHA DE BAIXO PARA CIMA.
+========================================================================================================
+POR PADRÃO QUE É "DISPLAY:FLEX;" OU "FLEX-DIRECTION:ROW" O ALINHAMENO É HORIZONTAL, PODE TER 1 OU 10 DIV,
+COM 200PX DE LARGURA, A TELA SERÁ DIVIDIDA POR 1 OU POR 10, QUE É A QUANTIDADE DE DIV, POREM FICA
+UMA DO LADO DA OUTRA, SENDO ASSIM AS DIV FICA TODAS DO MESMO TAMANHO.
+--PARA QUEBRAR A LINHA E FICAR COM OS 200PX DE LARGURA CADA UM, TEM QUE POR A PROPRIEDADE DO FLEXBOX QUE
+É --"flex-wrap:wrap;" OU "flex-flow:row wrap;" OU "flex-flow:column; OU flex-diretion:column" ALINHA EM COLUNA. 
+=========================================================================================================
+justfy-content:; ALINHA NA DIREÇÃO QUE ESTÁ SENDO IZIBIDA, SE "row" NA HORIZONTAL SE "colum" EM 
+COLUNA DENTRO DO "container"
+
+
+
+
+
+
+
+M
+
+
+
+
+
+
+
+
+
+====================================================================================================
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta id="vieowport"name="viewport" content="width=device-width, user-scalable=no">
+    <title>Flexbox1</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {/*container controla os box*/
+         display: flex;/*o conteúdo do container fica flexivel por padrão alinha na horizontal*/
+         flex-direction:row ;/*'row padrão','column coluna','row-reverse alinha da direita para a esquerda', 'column-reverse alinha debaixo para cima',*/
+          /* display: none;  A DIV NÃO MOSTRA*/
+          background-color: #DDDDDD;
+          margin: 10px;
+        }
+        .container div {/*toda div dentro do container*/
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+     /*==================================================================*/   
+    /*FLEXBOX = BOX FLEXIVEL => box, quadrado, div,espaço,armazenamento*/ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>um</div>
+        <div>dois</div>
+        <div>trez</div>
+    </div>
+   
+</body>
+</html>
+
+===================================================================================================
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta id="vieowport"name="viewport" content="width=device-width, user-scalable=no">
+    <title>Flexbox2</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+         display: flex; 
+         flex-direction:row ;
+          background-color: #DDDDDD;
+          margin: 10px;
+        }
+        .container div {
+            flex: 1;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+     /*==================================================================*/   
+    /*FLEXBOX = BOX FLEXIVEL => box, quadrado, div,espaço,armazenamento*/ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>um</div>
+        <div>dois</div>
+    </div>
+   
+</body>
+</html>
+
+============================================================================================
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta id="vieowport"name="viewport" content="width=device-width, user-scalable=no">
+    <title>Flexbox3</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+         display: flex; 
+         flex-direction:row ;
+          background-color: #DDDDDD;
+          margin: 10px;
+        }
+        .div1 {
+            flex: 1;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .div2 {
+            flex: 1;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .div3 {
+            flex:2;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">um</div>
+        <div class="div2">dois</div>
+        <div class="div3">trez</div>
+    </div>
+   
+</body>
+</html>
+==================================================================================================
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta id="vieowport"name="viewport" content="width=device-width, user-scalable=no">
+    <title>Flexbox4</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+         display: flex; 
+         flex-direction:row ;
+          background-color: #DDDDDD;
+          margin: 10px;
+        }
+        .div1 {
+            flex: 1;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .div2 {
+            flex: 1;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .div3 {
+            flex:1;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .div4 {
+            flex:3;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">um</div>
+        <div class="div2">dois</div>
+        <div class="div3">trez</div>
+        <div class="div4">quantro</div>
+
+    </div>
+   
+</body>
+</html>
+
+=============================================================================================
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta id="vieowport"name="viewport" content="width=device-width, user-scalable=no">
+    <title>Flexbox4</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+         display: flex; 
+         background-color: #DDDDDD;
+        }
+        .container div {
+            width: 200px;
+            background-color: #9acd32;
+            margin: 10px;
+            padding: 10px;
+            font-zise:18px;
+            text-align: center;
+        }
+        /*========================================*/
+        .container1 {
+         display: flex; 
+       /* flex-flow: column; OU */
+         flex-direction: column;
+         background-color: #DDDDDD;
+        }
+        .container1 div {
+            width: 200px;
+            background-color: #9acd32;
+            margin: 10px;
+            padding: 10px;
+            font-zise:18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+        <div class="div7">7</div>
+        <div class="div8">8</div>
+        <div class="div9">9</div>
+        <div class="div10">10</div>
+    </div>
+    <div class="container1">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+        <div class="div7">7</div>
+        <div class="div8">8</div>
+        <div class="div9">9</div>
+        <div class="div10">10</div>
+    </div>
+   
+</body>
+</html>
+
+===============================================================================================
+
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta id="vieowport"name="viewport" content="width=device-width, user-scalable=no">
+    <title>Flexbox6</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+         display: flex;
+         justify-content: center;
+          background-color: #DDDDDD;
+        }
+        .container div {
+            width: 100px;
+            background-color: #9acd32;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>um</div>
+        <div>dois</div>
+        <div>trez</div>
+    </div>
+   
+</body>
+</html>
+
+==================================================================================================
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="UTF-8">
+<meta id="vieowport"name="viewport" content="width=device-width, user-scalable=no">
+<title>Flexbox7</title>
+<link rel="stylesheet" href="estilo.css">
+<style type="text/css">
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    height: 500px;
+    justify-content: center;/*alinha da direção que está sendo ezibida, na linha, as tag de cima e de baixo juntas 'fica com está escrito a baixo'*/
+    align-items: center;/*alinha no centro do container, vertical e horizontal*/
+    background-color: #DDDDDD;
+}
+.container div {
+    width: 100px;
+    height: 100px;
+    background-color: #9acd32;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div>um</div>
+    <div>dois</div>
+    <div>trez</div>
+</div>
+
+</body>
+</html>
+
+==================================================================================================
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta id="vieowport"name="viewport" content="width=device-width, user-scalable=no">
+    <title>Flexbox8</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+         display: flex;
+         height: 500px;
+         justify-content: center;
+         align-items: center;
+         background-color: #DDDDDD;
+        }
+        .container div {
+            width: 100px;
+            height: 100px;
+            background-color: #9acd32;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;/*o texto alinha no centro da div*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>um</div>
+        <div>dois</div>
+        <div>trez</div>
+    </div>
+   
+</body>
+</html>
+
+====================================================================================================
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <style>
+        div {
+            margin: 20px;
+            width: 200px;
+            height: 100px;
+            padding: 30px;
+        }
+        #d1 {
+            background-color: aquamarine;
+        }
+        #d2 {
+            background-color: bisque;
+        }
+        #d3 {
+            background-color: cadetblue;
+        }
+        #d4 {
+            background-color: yellow;
+        }
+        #d5 {
+            background-color: gray;
+        }
+        #d6 {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>FORMULÁRIO</h2>
+    <h3>Área de cadastro</h3>
+ <div id="d1">
+    <form action="paginas/login.html" method="POST">
+      <input type="password" value="digite sua senha"/><br/>
+      <!--CAMPO PARA SENHA-->
+      <input type="submit"/>
+    </form>
+</div>
+<div id="d2">
+    <form action="paginas/login.html" method="POST">
+        <input type="text"/><br/><!--CAMPO TEXTO DE UMA LINHA-->
+        <input type="submit">
+    </form>  
+</div>
+<div id="d3">   
+    <form action="paginas/login.html" method="POST">
+        <input type="checkbox"/><br/><!--CAMPO PARA MARCAR-->
+        <input type="submit"/>
+    </form> 
+</div>
+<div id="d4">     
+    <form action="paginas/login.html" method="POST">
+    <!--RADIO CAMPO PARA MARCAR, FUNCIONA COM DOIS CAMPOS-->
+        <input type="radio" name="sexo"/><br/>
+        <input type="radio" name="sexo"/><br/>
+        <input type="submit"/>
+    </form> 
+</div>     
+<div id="d5">   
+    <form action="paginas/login.html" method="POST">
+        <input type="email" value="digite seu email"/><br/>
+        <input type="submit"/>
+     </form>   
+    </div>
+    <div id="d6">
+    <form action="paginas/login.html" method="POST">
+        <input type="usuario" value="digite seu nome"/><br/>
+        <input type="submit"/>
+    </form>  
+</div>
+</body>
+</html>

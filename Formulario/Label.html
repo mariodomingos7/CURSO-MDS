@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>LABEL</title>
+</head>
+<body>
+    <h2>BOTÃO</h2>
+    <!--PODE SER USADA NO FORMULARIO, TEM A MESMA FUNÇÃO DO INPUT,
+         E USAR FORA TAMBÉM -->
+  <form action="paginas/login.html" method="POST">
+    <label for="name">Nome Completo</label><br/>
+    <input type="text" name="nome" id="nome"/><br/><br/>
+    <input type="checkbox" id="teste"/>
+    <label for="teste">Eu declaro que li e aceito os termos de uso</label>
+    <button>IR PARA?</button>
+  </form> <br/> <br/>
+
+<div>
+  <form action="paginas/login.html" method="POST">
+    <label>
+        Nome Completo
+        <input type="text" name="nome"/>
+    </label>
+    <label>
+        Descrição<br/>
+        <textarea name="descricao"></textarea>
+    </label>
+    <label>
+        <!--A FORMA MAIS USADA-->
+        <input type="checkbox"/>
+        Eu declaro que li e aceito os termos de uso
+    </label>
+    <button>Fazer Cadastro</button>
+  </form> 
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta id="vieowport"name="viewport" content="width=device-width, user-scalable=no">
+    <title>Flexbox10</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style type="text/css">
+        body {
+            margin:10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+         display: flex;
+         height:500px;
+         flex-direction: row;
+         justify-content: center;
+         align-items:flex-start;
+          background-color: #DDDDDD;
+        }
+        .container div {
+            width: 100px;
+            height: 100px;
+            background-color: #9acd32;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+      .div10 {
+        order:1;/* a div10 vai para o final*/
+        }
+        /*Obs:as outras div está com order 0 por isso se matem no mesmo lugar*/
+        .div6 {
+            order:2;/*a div6 vai para o final*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>um</div>
+        <div>dois</div>
+        <div>trez</div>
+        <div>quatro</div>
+        <div>cinco</div>
+        <div class="div6">seis</div>
+        <div>sete</div>
+        <div>oito</div>
+        <div>nove</div>
+        <div class="div10">dez</div>
+           </div>
+   
+</body>
+</html>
