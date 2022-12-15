@@ -58,41 +58,72 @@ justify-content: center;
  height: 670px;/*altura do banner*/
 }
 .column {
-    /*o conteudo que tiver dentro container clumn fica alinhado em coluna*/
+    /*o conteudo que tiver dentro container column fica alinhado em coluna*/
     flex-direction: column;
 }
 .banner_headline {
-    flex: 1;/*para ficar do mesmo tamanaho*/
-    display: flex;/*para ficar um do lado do outro*/
-    flex-direction: column;/*para ficar um abaixo do outro*/
-    /*justify-content:center;para o texto ficar do centro do espaço dispunivel*/
-    justify-content: center;
+    flex: 1;/*altura variavel*/
+    display: flex;/*display:flex; e flex-derection:column pra h1 e h2 ficar em coluna*/
+    flex-direction: column;
+    justify-content:center;/*para ficar no centro da div*/
 }
 .banner_headline h1 {
-    color: #FFFFFF;/*cor dafonte*/
-    font-size:70px;/*tamanho da fonte*/
-  /*text-shadow: 0px sombra para o lado,2px sombra para baixo 0px espalhamento*/ 
-    text-shadow: 0px 2px 0px #555555;
+    color: #FFFFFF;
+    font-size: 70px;
+    text-shadow: 2px 4px 0px #555555;
+    /*text-shadow: 1px sombra do lado 2px para baixo 0px espalhamento*/
     margin: 0;
     padding: 0;
     max-width: 350px;
 }
 .banner_headline h2 {
-    color: #FFFFFF;/*cor dafonte*/
-    font-size:21px;/*tamanho da fonte*/
-    text-shadow: 0px 2px 0px #555555;
+    color: #FFFFFF;
+    font-size: 21px;
+    text-shadow: 1px 1px 0px #555555;
     margin: 0;
     padding: 0;
     max-width: 350px;
-    margin-top: 30px;
+    margin-top:30px;
+
 }
-.banner_options {/*options, é os 3 div azul na parte de baixo do banner geral*/
-    height: 210px;
+.banner_options {
+    height: 210px;/* altura fixa*/
     display: flex;
 }
 .banner1,
 .banner2,
 .banner3 {
-    flex: 1;/*para ficar em linha e do mesmo tamanho*/
-
+    flex:1;/*para ficar em linha e do mesmo tamanho*/
+    color: #FFFFFF;/*cor do texto*/
+    padding: 20px;
 }
+.banner1 {
+    background-color: #39aae1;
+}
+.banner2 {
+    background-color: #0079c7;
+}
+.banner3 {
+    background-color:#2b4c99;
+}
+.banner_title {
+    font-size: 21px;
+}
+.banner_desc {
+    font-size: 12px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.banner_options a {
+    display: inline-block;/*fica em bloco e em linha*/
+    border: 1px solid #FFFFFF;
+    padding:5px;
+    color: #FFFFFF;
+    font-size: 13px;
+    text-decoration: none;/*para tirar o sublinhado do link*/
+}
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
