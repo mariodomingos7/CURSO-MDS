@@ -50,7 +50,7 @@ nav a:hover {/*hover, quando passar o mouse o menu muda de cor*/
 }
 /*=====================================================================
    display:flex; e justifay-content:center; para alinhar a image no centro*/ 
-#banner {
+#baner {
 display: flex;
 justify-content: center;
  background-image: url('../images/img1.jpg');/*image de fundo do banner*/
@@ -61,13 +61,13 @@ justify-content: center;
 .column {
     flex-direction: column;
 }
-.banner-headline {
+.baner-texto {
     flex: 1;
     display: flex;
     flex-direction: column;/*display,flex-direction, justify-content,centro*/
     justify-content: center;
 }
-.banner-headline h1 {
+.texto h1 {
     color: #FFFFFF;
     font-size: 70px;
     text-shadow: 2px 4px 0px #555555;/*text-shadow: 1px sombra do lado 2px*/
@@ -75,7 +75,7 @@ justify-content: center;
     padding: 0;
     max-width: 350px;
 }
-.banner-headline h2{
+.texto h2 {
     color: #FFFFFF;
     font-size: 21px;
     text-shadow: 1px 2px 0px #555555;/*text-shadow: 1px sombra do lado 2px*/
@@ -83,27 +83,25 @@ justify-content: center;
     padding: 0;
     max-width: 350px;
 }
-.banner-options {
+.baner3cor {
     height: 210px;
     display: flex;
 }
-.banner1,
-.banner2,
-.banner3 {
+.baner1,
+.baner2,
+.baner3 {
     flex: 1;
-    color: #FFFFFF;
 }
-.banner1 {
+.baner1 {
     background-color: #39aae1;
 }
-.banner2 {
-    background-color: #0079c7;
+.baner2 {
+    background-color: #0079c7; ;
 }
-.banner3 {
-    background-color: #2b4c99;
+.baner3 {
+    background-color:#2b4c99; 
 }
 
-   
 
 /*
 ==========================================================================
