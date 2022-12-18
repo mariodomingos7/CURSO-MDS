@@ -70,7 +70,8 @@ justify-content: center;
 .texto h1 {
     color: #FFFFFF;
     font-size: 70px;
-    text-shadow: 2px 4px 0px #555555;/*text-shadow: 1px sombra do lado 2px*/
+    text-shadow: 2px 4px 0px #555555;
+    /*text-shadow: 1px sombra do lado, 2px para baixo 0px espalhamento*/
     margin: 0;
     padding: 0;
     max-width: 350px;
@@ -78,12 +79,14 @@ justify-content: center;
 .texto h2 {
     color: #FFFFFF;
     font-size: 21px;
-    text-shadow: 1px 2px 0px #555555;/*text-shadow: 1px sombra do lado 2px*/
+    text-shadow: 1px 2px 0px #555555;
     margin: 0;
     padding: 0;
     max-width: 350px;
+    margin-top: 30px;
 }
-.baner3cor {
+/*============================================================*/
+.baner3cores {
     height: 210px;
     display: flex;
 }
@@ -91,6 +94,8 @@ justify-content: center;
 .baner2,
 .baner3 {
     flex: 1;
+    color: #FFFFFF;
+    padding: 20px;
 }
 .baner1 {
     background-color: #39aae1;
@@ -100,6 +105,47 @@ justify-content: center;
 }
 .baner3 {
     background-color:#2b4c99; 
+}
+.baner-titulo {
+    font-size: 21px;
+}
+.banerdesc {
+    font-size: 12px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.baner3cores a {
+    display: inline-block;
+    border:1px solid #FFFFFF;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 13px;
+    text-decoration: none;/*para tirar o sublinhado*/
+}
+#geral {
+    display: flex;
+    justify-content: center;
+}
+#geral section {
+    flex: 2;
+}
+#geral aside {
+    flex: 1;
+} 
+.widget-titulo {
+    margin-top:30px;
+    margin-bottom:20px;
+}
+.widget-titulo-texto {
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+}
+.widget-titulo-barra {
+    width: 50px;
+    height: 3px;
+    background-color: #36a9c1;
+    margin-top:10px;
 }
 
 
