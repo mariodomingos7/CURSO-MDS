@@ -15,7 +15,6 @@ header {
     display: flex;
     justify-content: space-between;/*uma div na esquerda e outra na direita*/
     width: 990px;/*é a largura do header*/
-    height: 100px;/*altura do header*/
 }
 .logo {
  /*display:flex; e align-items:center; para alinhar no centro na vertical*/
@@ -33,7 +32,7 @@ nav li {
     margin:0;
     padding:0;
 }
-nav ul{
+nav ul {
     display: flex;
 }
 nav a {
@@ -48,135 +47,170 @@ nav a:hover {/*hover, quando passar o mouse o menu muda de cor*/
     background-color: #39aae1;
     color: #FFFFFF;/*quando passar o mouse a letra fica branca*/
 }
-/*=====================================================================
+/*================FIM DO MENU===============================
    display:flex; e justifay-content:center; para alinhar a image no centro*/ 
-#banner {
+#baner {
 display: flex;
 justify-content: center;
  background-image: url('../images/img1.jpg');/*image de fundo do banner*/
  background-position:center ;/*pra image ficar no centro da section*/
  background-size:cover;/*para preecher o espaço da section*/
- height: 670px;/*altura do banner*/
+ height: 670px;/*altura do baner*/
 }
 .column {
     flex-direction: column;
 }
-.banner-headline {
+.baner-texto {
     flex: 1;
     display: flex;
     flex-direction: column;/*display,flex-direction, justify-content,centro*/
     justify-content: center;
 }
-.banner-headline h1 {
+.texto h1 {
     color: #FFFFFF;
     font-size: 70px;
-    text-shadow: 2px 4px 0px #555555;/*text-shadow: 1px sombra do lado 2px*/
+    text-shadow: 2px 4px 0px #555555;/*text-shadow: 1º do lado,2º baixo 3º espalhamento*/
     margin: 0;
     padding: 0;
     max-width: 350px;
 }
-.banner-headline h2{
+.texto h2 {
     color: #FFFFFF;
     font-size: 21px;
-    text-shadow: 1px 2px 0px #555555;/*text-shadow: 1px sombra do lado 2px*/
+    text-shadow: 1px 2px 0px #555555;
     margin: 0;
     padding: 0;
     max-width: 350px;
+    margin-top: 30px;
 }
-.banner-options {
+/*============================================================*/
+.baner3cores {
     height: 210px;
     display: flex;
 }
-.banner1,
-.banner2,
-.banner3 {
+.baner1,
+.baner2,
+.baner3 {
     flex: 1;
     color: #FFFFFF;
-}
-.banner1 {
-    background-color: #39aae1;
-}
-.banner2 {
-    background-color: #0079c7;
-}
-.banner3 {
-    background-color: #2b4c99;
-}
-
-   
-
-/*
-==========================================================================
-text-shadow: 2px 4px 0px #555555;/*text-shadow: 1px sombra do lado 4px para baixo 0px espalhamento
-===========================================================================
-.banner_headline {
-    flex: 1;/*altura variavel
-    display: flex;/*display:flex; e flex-derection:column; h1 e h2 fica em  coluna
-    flex-direction: column;
-    justify-content:center;/*para ficar no centro da div
-   ======================================================================== 
-   .banner_headline h1 {
-    color: #FFFFFF;
-    font-size: 70px;
-    text-shadow: 2px 4px 0px #555555;/*text-shadow: 1px sombra do   lado 2px para baixo 0px espalhamento
-                                       
-    margin: 0;
-    padding: 0;
-    max-width: 350px;
-}
-.banner_headline h2 {
-    color: #FFFFFF;
-    font-size: 21px;
-    text-shadow: 1px 1px 0px #555555;
-    margin: 0;
-    padding: 0;
-    max-width: 350px;
-    margin-top:30px;
-
-}
-.banner_options{
-    height: 210px;
-    display:flex;
-}
-.banner1,
-.banner2,
-.banner3 {
-
-}
-.banner_options {
-    height: 210px;/* altura fixa
-    display: flex;
-}
-.banner1,
-.banner2,
-.banner3 {
-    flex:1;/*para ficar em linha e do mesmo tamanho
-    color: #FFFFFF;/*cor do texto
     padding: 20px;
 }
-.banner1 {
+.baner1 {
     background-color: #39aae1;
 }
-.banner2 {
+.baner2 {
     background-color: #0079c7;
 }
-.banner3 {
-    background-color:#2b4c99;
+.baner3 {
+    background-color:#2b4c99; 
 }
-.banner_title {
+.baner-titulo {
     font-size: 21px;
 }
-.banner_desc {
+.banerdesc {
     font-size: 12px;
     margin-top:20px;
-    margin-bottom: 20px;
+    margin-bottom:20px;
 }
-.banner_options a {
-    display: inline-block;/*fica em bloco e em linha
-    border: 1px solid #FFFFFF;
-    padding:5px;
+.baner3cores a {
+    display: inline-block;
+    border:1px solid #FFFFFF;
+    padding: 5px;
     color: #FFFFFF;
     font-size: 13px;
-    text-decoration: none;/*para tirar o sublinhado do link
-*/
-
+    text-decoration: none;/*para tirar o sublinhado*/
+}
+#geral {
+    display: flex;
+    justify-content: center;
+}
+#geral section {
+    flex: 2;
+}
+#geral aside {
+    flex: 1;
+} 
+.widget-titulo {
+    margin-top:30px;
+    margin-bottom:20px;
+}
+.widget-titulo-texto {
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+}
+.widget-titulo-barra {
+    width: 50px;
+    height: 3px;
+    background-color: #36a9c1;
+    margin-top:10px;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;/*para quebar a linha*/
+}
+article {
+    flex:1;
+    min-width:300px;
+    margin-right:20px;/*marge a direita*/
+}
+article a {
+    text-decoration: none;/*para tirar o sublinhado*/
+}
+article .news-data {
+    display: flex;
+}
+article .news-postad {
+    background-color: #2b4c99;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;/*marge vegical*/
+}
+article .news-coments {
+    background-color: #39aae1;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+}
+article .news-thumbnail {
+    margin-top: 30px;
+}
+article .news-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+article .news-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color:#000000;
+    font-size: 23px;
+}
+article .news-resume {
+    color:#5c5c5c;
+    font-size: 14px;
+    line-height: 20px;/*espaço entre linhas*/
+    margin-bottom: 30px;
+}
+/*=========================footer============*/
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+.footer-menu {
+    display: flex;
+    flex: 1;
+}
+.fm1, .fm2, .fm3 {
+    flex:1;
+}
+.fm1 {
+    background-color: #39aae1;
+}
+.fm2 {
+    background-color: #0079c7;
+}
+.fm3 {
+    background-color:#2b4c99; 
+}
