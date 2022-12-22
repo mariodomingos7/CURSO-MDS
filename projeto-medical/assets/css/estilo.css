@@ -47,8 +47,9 @@ nav a:hover {/*hover, quando passar o mouse o menu muda de cor*/
     background-color: #39aae1;
     color: #FFFFFF;/*quando passar o mouse a letra fica branca*/
 }
-/*================FIM DO MENU===============================
-   display:flex; e justifay-content:center; para alinhar a image no centro*/ 
+/*================FIM DO MENU===========================*/
+/*=========INICIO DO PRIMEIRO BANER===================*/
+ /* display:flex; e justifay-content:center; para alinhar a image no centro*/ 
 #baner {
 display: flex;
 justify-content: center;
@@ -66,15 +67,16 @@ justify-content: center;
     flex-direction: column;/*display,flex-direction, justify-content,centro*/
     justify-content: center;
 }
-.texto h1 {
+.baner-texto h1 {
     color: #FFFFFF;
     font-size: 70px;
-    text-shadow: 2px 4px 0px #555555;/*text-shadow: 1º do lado,2º baixo 3º espalhamento*/
+    text-shadow: 2px 4px 0px #555555;
+    /*text-shadow: 1º do lado,2º baixo 3º espalhamento*/
     margin: 0;
     padding: 0;
     max-width: 350px;
 }
-.texto h2 {
+.baner-texto h2 {
     color: #FFFFFF;
     font-size: 21px;
     text-shadow: 1px 2px 0px #555555;
@@ -83,8 +85,9 @@ justify-content: center;
     max-width: 350px;
     margin-top: 30px;
 }
-/*============================================================*/
-.baner3cores {
+
+/*==========INICIO DOS 3 MINI BANER=======================*/
+.baner-3cores {
     height: 210px;
     display: flex;
 }
@@ -107,12 +110,12 @@ justify-content: center;
 .baner-titulo {
     font-size: 21px;
 }
-.banerdesc {
+.baner-desc {
     font-size: 12px;
     margin-top:20px;
     margin-bottom:20px;
 }
-.baner3cores a {
+.baner-3cores a {
     display: inline-block;
     border:1px solid #FFFFFF;
     padding: 5px;
@@ -120,6 +123,9 @@ justify-content: center;
     font-size: 13px;
     text-decoration: none;/*para tirar o sublinhado*/
 }
+/*========FIM DOS 3 MINI BANER=================*/
+/*=========FIM DO PRIMEIRO BANER==============*/
+/*=========INICIO DO SEGUNDO BANER===========*/
 #geral {
     display: flex;
     justify-content: center;
@@ -149,6 +155,7 @@ justify-content: center;
     display: flex;
     flex-wrap: wrap;/*para quebar a linha*/
 }
+/*========FIM DO SEGUNDO BANER==========*/
 article {
     flex:1;
     min-width:300px;
