@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="vieowport" content="width=device-width,user-scalable=0"/>
     <link rel="stylesheet" type="text/css" href="assets/css/estilo.css"/>
+    <!--condigo em java-script pro menu funcionar em celular-->
+    <script type="text/javascript">
+    window.onload = function(){
+     document.querySelector(".menuMobile").addEventListener("click", function(){
+       if(document.querySelector(".menu nav ul").style.display == 'felx') {
+          document.querySelector(".menu nav ul").style.display = 'none';
+        }else {
+          document.querySelector(".menu nav ul").style.display = 'flex';
+        }
+        });
+    };
+</script>
     <title>medicenter</title>
 </head>
 <body>
@@ -15,6 +27,12 @@
     </div>
     <div class="menu">
         <nav><!--dentro do nave vai o menu de navegação-->
+    <!--==============MENU PARA CELULAR===========-->
+            <div class="menuMobile">
+              <div class="mm-line"></div>
+              <div class="mm-line"></div>
+              <div class="mm-line"></div>
+            </div>
         <ul>
             <!--active, para ativar o primeiro menu na cor que tiver no css-->
             <li class="active"><a href="">home</a></li>

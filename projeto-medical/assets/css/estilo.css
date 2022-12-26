@@ -1,3 +1,9 @@
+/*
+LEPTOP================1024 PX
+TABLET=================768 PX
+CELULAR GRANDE=========425 PX
+*/
+
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -249,4 +255,79 @@ footer .widget-titulo-texto {
     color: #5c5c5c;
     font-size: 12px;
     margin-top:30px;
+}
+/*============MENU PARA CELULAR===========*/
+.menuMobile {
+    display: none;/*por padrão*/
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm-line {
+    height: 3px;
+    background-color: #39aae1;
+}
+/*==============================================*/
+@media (max-width:600px) {
+
+    .baner-texto {
+        padding: 20px;
+    }
+    .baner-texto h1 {
+        font-size: 55px;
+    }
+    .baner-texto h2 {
+        font-size: 17px;
+    }
+    .baner-3cores {
+        height: auto;
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+    }
+    #geral section {
+        padding: 20px;
+    }
+    #geral aside {
+        padding: 20px;
+    }
+    .footer-menu {
+        flex-direction: column;
+    }
+    .footer-area {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer-copy {
+        padding-left: 20px;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    nav ul {
+        flex-direction: column;
+        /*abaixo...configuração do menu para celular*/
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    /*configuração do header para celular*/
+    header {
+        height: auto;
+    }
+        /*configuração da logo para celular*/
+    .logo {
+        padding-left: 20px;
+    }
+        /*configuração do nemuMobile para celular*/
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
