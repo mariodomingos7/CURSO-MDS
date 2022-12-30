@@ -42,8 +42,8 @@ nav ul {
     display: flex;
 }
 nav a {
-    display: block;/*serve para alterar tamanho e area do */
-    padding: 15px;/*para o testo ficar no centro de cada menu*/
+    display: block;/*serve para alterar tamanho e area do menu*/
+    padding: 15px;/*para o texto ficar no centro de cada menu*/
     text-decoration: none;/*para tirar o sublinha de cada menu*/
     text-transform: uppercase;/*para as letras do menu ficar todas maiúsculas*/
     color:#727272;/*cor das letras do menu*/
@@ -179,7 +179,7 @@ article .news-posted {
     color: #FFFFFF;
     font-size: 12px;
     padding: 10px;
-    margin-right: 2px;/*marge vegical*/
+    margin-right: 2px;/*marge da direita*/
 }
 article .news-coments {
     background-color: #39aae1;
@@ -218,6 +218,7 @@ footer {
 .fm1, .fm2, .fm3 {
     flex:1;
     color:#FFFFFF;
+    padding: 20px;
 }
 .fm1 {
     background-color: #39aae1;
@@ -307,10 +308,11 @@ footer .widget-titulo-texto {
     header .container {
         flex-direction: row;
     }
+    /*menu resposivo*/
     nav ul {
         flex-direction: column;
-        /*abaixo...configuração do menu para celular*/
         display: none;
+        /*abaixo...configuração do menu para celular*/
         position: absolute;
         left: 0;
         width: 100%;
