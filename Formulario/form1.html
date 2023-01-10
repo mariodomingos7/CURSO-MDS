@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Form1</title>
+</head>
+<body>
+<h2>Tipo de campos</h2>
+<form action="pagina/login.thml" method="POST">
+    <input type="text"/><!--campo de texto-->
+    <input type="password"/><!--campo de senha-->
+    <input type="checkbox"/><!--campo para marcar-->
+    <input type="radio" name="sexo"/><!--campo para marcar-->
+    <input type="radio" name="sexo"/><!--precisa 2 campos com mesmo name-->
+    <input type="submit"/><!--botão de enviar-->
+    <input type="email"/><!--campo par email-->
+    <input type="text" name="usuario"/>
+</form>
+<h2>Área de cadastro</h2>
+<form>
+
+</form>
+<h2>Área de login</h2>
+<!--OBS: É BOM POR O NAME EM TODOS OS INPUTS, MENOS NO "SUBMIT" O BOTÃO-->
+<form action="paginas/login.html" method="POST">
+    <input type="text" name="usuario" value="Digite"/>
+    <input type="submit"/>
+
+</form>
+</body>
+</html>
